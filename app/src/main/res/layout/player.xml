@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_marginTop="16dp"
+                                             tools:showIn="@layout/activity_main">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5pt"
+            android:id="@+id/playerLayout">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="center" android:id="@+id/playerText">
+            <TextView
+                    android:text="Player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/playerName"
+                    android:padding="1.5pt"/>
+            <TextView
+                    android:text="Health"
+                    android:layout_height="wrap_content" android:id="@+id/playerHealth"
+                    android:layout_width="wrap_content"
+                    android:padding="1.5pt"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/addButtons">
+            <Button
+                    android:text="+1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/add"
+                    android:layout_weight="1"/>
+            <Button
+                    android:text="+5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/addFive"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/minusButtons">
+            <Button
+                    android:text="-1"
+                    android:layout_height="wrap_content" android:id="@+id/minus"
+                    android:layout_weight="1" android:layout_width="wrap_content"/>
+            <Button
+                    android:text="-5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/minusFive"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
